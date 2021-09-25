@@ -1,0 +1,240 @@
+/* Default */
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin-left: 0;
+}
+
+.pricing-table{
+    background-color: #f6f9fc;
+    padding: 50px 0;
+}
+.pricing-content{}
+.pricing-content h6 {
+    margin-bottom: 10px;
+    color: #8578ee;
+}
+.pricing-content h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.pricing-content h3::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 2px;
+    left: 195px;
+    bottom: -9px;
+    background: #3d68eb;
+}
+.pricing-content p {
+    color: #8f8f93;
+    font-weight: 500;
+    margin-bottom: 64px;
+}
+
+
+.pricing-items{
+    transition: .3s;
+}
+.pricing-items h5 {
+    padding-top: 40px;
+    margin-bottom: 22px;
+}
+.pricing-items h1{
+        font-size: 43px;
+        margin-bottom: 80px;
+        position: relative;
+}
+.pricing-items h1::after {
+    content: "";
+    position: absolute;
+    left: 77px;
+    bottom: -66px;
+    width: 59%;
+    height: 1px;
+    background-color: #ddd;
+}
+.pricing-items ul{
+    padding: 0;
+    margin-top: 15px;
+}
+.pricing-items ul li {
+    color: #848687;
+    font-weight: 400;
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.pricing-btn{}
+.pricing-btn a {
+    border-radius: 21px;
+    padding: 6px 16px;
+    font-size: 17px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+}
+.pricing-btn a::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #3662e7;
+    border-color: #3662e7;
+    color: #fff !important;
+    border-radius: 21px;
+    z-index: -1;
+    transition: .4s;
+}
+
+.pricing-btn .btn:hover::after{
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+}
+
+.pricing-items:hover{
+    background-color: #3662e7;
+    color: #fff;
+}
+.pricing-items:hover .pricing-btn a{
+    background-color: #fff;
+    color: #3662e7;
+}
+.pricing-items:hover li{
+    color: #fff;
+}
+
+/* service */
+.service{
+    background: url(https://i.ibb.co/BfvcYwn/free-bg.jpg) no-repeat center ;
+    background-size: cover;
+    padding: 120px;
+    position: relative;
+    z-index: 1;
+}
+.service::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 104, 214, .8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.service h6 {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.service h2 {
+    font-size: 34px;
+    margin-bottom: 31px;
+    position: relative;
+}
+.service h2::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 1px;
+    left: 228px;
+    bottom: -12px;
+    background: #fff;
+}
+.service p {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.service a {
+    display: inline-block;
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 22px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #3b8afe;
+    position: relative;
+    z-index: 1;
+    
+    
+}
+.service a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: red;
+    color: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 22px;
+    transition: 6s;
+    z-index: -1;
+    
+}
+.service a:hover::after{
+    width: 100%;
+    color: #fff;
+}
+
+
+
+/* newsletter */
+.newsletter{
+    background-color: #f8f9fa;
+    padding: 70px 0;
+}
+
+.sign-up{
+    background-color: #3763eb;
+    padding: 30px 10px 50px 20px;
+}
+
+.newsletter h3 {
+    font-size: 29px;
+    margin-bottom: 22px;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+.newsletter p {
+    font-size: 17px;
+    margin-bottom: 27px;
+}
+.newsletter input {
+    border-radius: 24px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fafafa;
+}
+.newsletter .n-left-btn{}
+.newsletter .n-left-btn a {
+    border: 1px solid #ddd;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 17px;
+    border-radius: 27px;
+    font-weight: 500;
+}
+.newsletter-right h3 {
+    font-size: 29px;
+    margin-bottom: 71px;
+}
+.newsletter-right a {
+    border-radius: 18px;
+    padding: 5px 17px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}

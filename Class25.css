@@ -13,7 +13,7 @@ ul{
     background-color: #f6f9fc;
     padding: 50px 0;
 }
-.pricing-content{}
+
 .pricing-content h6 {
     margin-bottom: 10px;
     color: #8578ee;
@@ -40,7 +40,7 @@ ul{
 
 
 .pricing-items{
-    transition: .3s;
+    transition: .5s;
 }
 .pricing-items h5 {
     padding-top: 40px;
@@ -59,7 +59,19 @@ ul{
     width: 59%;
     height: 1px;
     background-color: #ddd;
+    
 }
+
+.pricing-items:hover h1{
+    animation: example 2s infinite;
+}
+
+
+@keyframes example {
+    from {color: #666d78;}
+    to {color: #fff;}
+  }
+
 .pricing-items ul{
     padding: 0;
     margin-top: 15px;
@@ -70,47 +82,60 @@ ul{
     font-size: 19px;
     margin-bottom: 4px;
 }
+.pricing-items:hover ul li{
+    color: #fafafafa;
+}
 
 .pricing-btn{}
+
+
 .pricing-btn a {
-    border-radius: 21px;
+    display: inline-block;
     padding: 6px 16px;
-    font-size: 17px;
-    margin-bottom: 45px;
+    background: #335fe4;
+    color: #fff;
+    border-radius: 21px;
+    text-decoration: none;
     position: relative;
     z-index: 1;
-}
-.pricing-btn a::after{
-    content: "";
-    width: 0;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    background-color: #3662e7;
-    border-color: #3662e7;
-    color: #fff !important;
-    border-radius: 21px;
-    z-index: -1;
-    transition: .4s;
+
+    font-size: 17px;
+    margin-bottom: 45px;
+    border-color: #335fe4;
+    
 }
 
-.pricing-btn .btn:hover::after{
+.pricing-btn a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 21px;
+    width: 0;
+    height: 100%;
+    background-color: #335fe4;
+    border-color:#fff;
+    transition: .5s;
+    z-index: -1;
+}
+
+.pricing-btn a:hover::after{
     width: 100%;
-    color: #fff;
-    z-index: 1;
+}
+
+.pricing-btn a:hover{
+    color: #fff !important;
 }
 
 .pricing-items:hover{
-    background-color: #3662e7;
+    background-color: #335fe4;
     color: #fff;
+    transition: .2s;
 }
+
 .pricing-items:hover .pricing-btn a{
     background-color: #fff;
-    color: #3662e7;
-}
-.pricing-items:hover li{
-    color: #fff;
+    color: #335fe4;
 }
 
 /* service */
@@ -163,7 +188,7 @@ ul{
     border-radius: 22px;
     font-size: 17px;
     font-weight: 500;
-    color: #3b8afe;
+    color: #335fe4;
     position: relative;
     z-index: 1;
     
@@ -174,17 +199,20 @@ ul{
     position: absolute;
     width: 0;
     height: 100%;
-    background-color: red;
-    color: #fff;
+    background-color: #335fe4;
     left: 0;
     top: 0;
     border-radius: 22px;
-    transition: 6s;
+    transition: .5s;
     z-index: -1;
     
 }
 .service a:hover::after{
     width: 100%;
+    color: #fff;
+}
+
+.service a:hover{
     color: #fff;
 }
 
@@ -197,7 +225,7 @@ ul{
 }
 
 .sign-up{
-    background-color: #3763eb;
+    background-color: #335fe4;
     padding: 30px 10px 50px 20px;
 }
 
